@@ -43,7 +43,7 @@ public class ticTacToeFrame extends JFrame {
             private JLabel instructionsLabel = new JLabel("<html>X = Human<br>O = Computer<br>Computer plays first<br>To play click on open space</html>");
             private JLabel winnerLabel = new JLabel("The winner is");
 
-        private JPanel controlsPanel = new JPanel();
+        private JPanel controlsPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
             private JButton clearButton = new JButton("Clear");
             private JButton beginButton = new JButton("Begin");
             private JButton exitButton = new JButton("Exit");
@@ -138,6 +138,7 @@ public class ticTacToeFrame extends JFrame {
             for (int c = 0; c < 3; c++) {
                 buttons[r][c] = new JButton("");
                 buttons[r][c].setFont(new Font("Arial", Font.BOLD, 40));
+                buttons[r][c].setBackground(Color.WHITE);
 
                 final int row = r;
                 final int col = c;

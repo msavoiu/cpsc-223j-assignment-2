@@ -9,7 +9,7 @@ public class testTicTacToe
         ticTacToeFrame ui = new ticTacToeFrame();
         ui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        ui.setSize(300, 450);
+        ui.pack();
 
         ui.setVisible(true);
     }
